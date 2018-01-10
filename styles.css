@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: cursive;
+	color: #555;
+}
+
+body {
+ 	background-color: #a4a2a7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%2385e4f2' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	z-index: -1;
+}
+
+.col-md-12 {
+	text-align: center;
+	padding-top: 3em;
+}
+
+.container {
+	text-align: center;
+	padding-top: 50px;
+	-webkit-font-smoothing: antialiased;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+
+@keyframes fadein {
+	100% {
+	opacity: 1;
+	}
+}
+
+.quote-box {
+	font-size: 1.5em;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.btn {
+	white-space: normal;
+	font-size: 12px;
+	background-color: #fff;
+	transition: .5s;
+}
+
+.btn:hover {
+	background-color: #85e4f2;
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #a4a2a7;
+    font-size: .8em;
+    color: black;
+    text-align: center;
+}
