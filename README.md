@@ -1,5 +1,5 @@
-# quoteGen
-###A random quote generator
+# Quote Generator
+### A random quote generator
 ## Link to gh-pages 
 https://treddson.github.io/quoteGen/
 ## Author name
